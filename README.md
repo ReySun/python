@@ -1,9 +1,9 @@
 ### development
 1. vscode
-2. python3
+2. python3.6
 3. install python extension suggestions in vscode
 
-### how to run?
+### there are three ways to test
 1. choose one file, press `F5` in vscode
 2. right click the file to `run in terminal`
 3. run `python **.py` in terminal
