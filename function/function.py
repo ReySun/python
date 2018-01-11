@@ -8,14 +8,14 @@ print(say_hello())
 
 
 # 函数参数
-def print_max(a, b):
+def print_max1(a, b):
     if a > b:
         print(a, 'is maximum')
     elif a == b:
         print(a, 'is equal to', b)
     else:
         print(b, 'is maximum')
-print_max(3, 4)
+print_max1(3, 4)
 
 
 # 局部变量
@@ -30,13 +30,13 @@ print('x is still', x)
 
 # global 语句
 x = 50
-def func():
+def func1():
     global x
 
     print('x is', x)
     x = 2
     print('Changed global x to', x)
-func()
+func1()
 print('Value of x is', x)
 
 
@@ -48,11 +48,11 @@ say('World', 5)
 
 
 # 关键字参数
-def func(a, b=5, c=10):
+def func2(a, b=5, c=10):
     print('a is', a, 'and b is', b, 'and c is', c)
-func(3, 7)
-func(25, c=24)
-func(c=50, a=100)
+func2(3, 7)
+func2(25, c=24)
+func2(c=50, a=100)
 
 
 # 可变参数
@@ -75,7 +75,7 @@ print(total(10,1,2,3,Jack=1123,John=2231,Inge=1560))
 
     第二行为空行，
     后跟的第三行开始是任何详细的解释说明。5在此强烈建议你在你所有重要功能的所有文档字符串中都遵循这一约定。 '''
-def print_max(x, y):
+def print_max2(x, y):
     '''Prints the maximum of two numbers.打印两个数值中的最大数。
 
     The two values must be integers.这两个数都应该是整数'''
@@ -88,5 +88,5 @@ def print_max(x, y):
     else:
         print(y, 'is maximum')
 
-print_max(3, 5)
-print(print_max.__doc__)
+print_max2(3, 5)
+print(print_max2.__doc__)
